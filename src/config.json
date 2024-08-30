@@ -1,0 +1,8 @@
+{
+"default": {
+  "API_BASE_URL": "https://sandbox-partners-api.airalo.com",
+  "UI_BASE_URL": "https://www.airalo.com"
+},
+"production": {},
+"staging": {}
+}
