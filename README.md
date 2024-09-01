@@ -12,8 +12,20 @@ This project contains code for below assignments:
     How to Setup ChromeDriver [Mac](https://medium.com/@tripleaceme/setting-up-chrome-driver-on-mac-0f32580912c3)  [Windows](https://medium.com/@patrick.yoho11/installing-selenium-and-chromedriver-on-windows-e02202ac2b08).
 
 ##### Running the tests
-Mac: ```./run_tests.sh```
-Windows: 
+#### Mac
+To run browser test  
+```
+./run_ui_tests.sh
+ ```
+
+To run API test by setting appropriate secrets
+```
+export CLIENT_ID=="<cilent_id>"
+export CLIENT_SECRET="<client_secret"
+./run_api_tests.sh
+```
+
+##### Windows
 Installing Cygwin or Git Bash on Windows and adding the path where it is installed to the Environment variables will allow us to run “.sh” files on Windows from Command Prompt.
 
 ##### Overview of Test Automation approach

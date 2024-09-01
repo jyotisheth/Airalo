@@ -1,6 +1,7 @@
 from api_helper import Config
 from http_client import HttpClient
 import pytest
+import os
 
 
 @pytest.fixture(scope="class")
@@ -28,8 +29,8 @@ class TestApi:
         # Class-level setup, runs once before all tests
         config = Config()
         cls.class_resource = "class_resource"
-        cls.http_client_obj = HttpClient(base_url=config.base_url(), client_id="",
-                                         client_secret="")
+        cls.http_client_obj = HttpClient(base_url=config.base_url(), client_id=os.environ.get('CLIENT_ID') ,
+                                         client_secret=os.environ.get('CLIENT_SECRET') )
 
     @classmethod
     def teardown_class(cls):
